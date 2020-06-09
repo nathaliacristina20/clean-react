@@ -11,7 +11,7 @@ interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
 const Input: React.FC<InputProps> = ({ ...props }) => {
   return (
     <div className={Styles.inputWrap}>
-      <input { ...props} />
+      <input { ...props} autoComplete="off" />
       <span className={Styles.status}>🔴</span>
     </div>
   )
